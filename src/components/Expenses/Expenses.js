@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Card from "../UI/Card";
 import ExpensesFilter from "../UI/ExpensesFilter";
-import ExpenseItem from "./ExpenseItem";
+import ExpensesList from "./ExpensesList";
 import "./Expenses.css";
+import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
   //This component is the parent of ExpensesFilter component and is controlling that component's state.
   //Presentational / Stateless (ExpensesFilter) vs Stateful (Expenses) components. Dumb (ExpensesFilter) vs Smart (Expenses) components
   const [filteredYear, setFilteredYear] = useState("2020");
+
   //Derived values or Derived state
 
   let filteredInfoText = "2019, 2021 and 2022";
@@ -25,24 +27,22 @@ function Expenses(props) {
     console.log(selectedYear);
   };
 
+  const newExpenses = props.expenses.filter((expense) => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
-    <div>
+    <li>
       <Card className="expenses">
         <ExpensesFilter
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        <p>Data for years {filteredInfoText} is hidden.</p>
-
-        {props.expenses.map((expense) => (
-          <ExpenseItem
-            title={expense.title}
-            amount={expense.amount}
-            date={expense.date}
-          />
-        ))}
+        <ExpensesChart expenses={newExpenses} />
+        {/* <p>Data for years {filteredInfoText} is hidden.</p> */}
+        <ExpensesList expenses={newExpenses} />
       </Card>
-    </div>
+    </li>
   );
 }
 
