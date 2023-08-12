@@ -5,7 +5,17 @@ const ChartBar = (props) => {
   let barFillHeight = "0%";
 
   if (props.maxValue > 0) {
-    barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
+    // Apply logarithmic scale to the value
+    const logValue = Math.log(props.value + 1); // Adding 1 to avoid log(0)
+
+    // Define a maximum percentage height for a bar (e.g., 80%)
+    const maxBarHeightPercentage = 80;
+
+    // Calculate the bar height percentage based on the logarithmic scale and the maximum percentage height
+    barFillHeight =
+      Math.round(
+        (logValue / Math.log(props.maxValue + 1)) * maxBarHeightPercentage
+      ) + "%";
   }
 
   return (
