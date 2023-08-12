@@ -402,6 +402,135 @@ const DUMMY_EXPENSES = [
     amount: 70.0,
     date: new Date(2023, 9, 28),
   },
+  { id: "e113", title: "Gifts", amount: 60.0, date: new Date(2019, 10, 15) },
+  {
+    id: "e114",
+    title: "Holiday Shopping",
+    amount: 100.0,
+    date: new Date(2019, 10, 30),
+  },
+  {
+    id: "e115",
+    title: "Thanksgiving Dinner",
+    amount: 50.0,
+    date: new Date(2019, 10, 25),
+  },
+  {
+    id: "e116",
+    title: "Christmas Gifts",
+    amount: 120.0,
+    date: new Date(2019, 11, 10),
+  },
+  {
+    id: "e117",
+    title: "New Year's Eve Celebration",
+    amount: 80.0,
+    date: new Date(2019, 11, 31),
+  },
+
+  { id: "e118", title: "Gifts", amount: 75.0, date: new Date(2020, 10, 15) },
+  {
+    id: "e119",
+    title: "Black Friday Shopping",
+    amount: 120.0,
+    date: new Date(2020, 10, 27),
+  },
+  {
+    id: "e120",
+    title: "Thanksgiving Dinner",
+    amount: 60.0,
+    date: new Date(2020, 10, 26),
+  },
+  {
+    id: "e121",
+    title: "Christmas Decorations",
+    amount: 40.0,
+    date: new Date(2020, 11, 5),
+  },
+  {
+    id: "e122",
+    title: "New Year's Eve Celebration",
+    amount: 100.0,
+    date: new Date(2020, 11, 31),
+  },
+
+  { id: "e123", title: "Gifts", amount: 90.0, date: new Date(2021, 10, 15) },
+  {
+    id: "e124",
+    title: "Black Friday Shopping",
+    amount: 150.0,
+    date: new Date(2021, 10, 26),
+  },
+  {
+    id: "e125",
+    title: "Thanksgiving Dinner",
+    amount: 70.0,
+    date: new Date(2021, 10, 25),
+  },
+  {
+    id: "e126",
+    title: "Christmas Gifts",
+    amount: 130.0,
+    date: new Date(2021, 11, 15),
+  },
+  {
+    id: "e127",
+    title: "New Year's Eve Celebration",
+    amount: 110.0,
+    date: new Date(2021, 11, 31),
+  },
+
+  { id: "e128", title: "Gifts", amount: 110.0, date: new Date(2022, 10, 15) },
+  {
+    id: "e129",
+    title: "Black Friday Shopping",
+    amount: 180.0,
+    date: new Date(2022, 10, 25),
+  },
+  {
+    id: "e130",
+    title: "Thanksgiving Dinner",
+    amount: 80.0,
+    date: new Date(2022, 10, 24),
+  },
+  {
+    id: "e131",
+    title: "Christmas Decorations",
+    amount: 60.0,
+    date: new Date(2022, 11, 5),
+  },
+  {
+    id: "e132",
+    title: "New Year's Eve Celebration",
+    amount: 140.0,
+    date: new Date(2022, 11, 31),
+  },
+
+  { id: "e133", title: "Gifts", amount: 120.0, date: new Date(2023, 10, 15) },
+  {
+    id: "e134",
+    title: "Black Friday Shopping",
+    amount: 200.0,
+    date: new Date(2023, 10, 24),
+  },
+  {
+    id: "e135",
+    title: "Thanksgiving Dinner",
+    amount: 90.0,
+    date: new Date(2023, 10, 23),
+  },
+  {
+    id: "e136",
+    title: "Christmas Gifts",
+    amount: 160.0,
+    date: new Date(2023, 11, 15),
+  },
+  {
+    id: "e137",
+    title: "New Year's Eve Celebration",
+    amount: 130.0,
+    date: new Date(2023, 11, 31),
+  },
 ];
 
 export default DUMMY_EXPENSES;
